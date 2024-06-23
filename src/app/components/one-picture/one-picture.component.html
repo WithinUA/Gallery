@@ -1,0 +1,10 @@
+
+
+<div class="picCollection" *ngFor="let picture of pictures">
+    <div [ngStyle]="{'width': '100%',
+                    'height': '80%'}"
+        (click)="setSelectedPicture(picture)">
+        <img [src]="picture.link" alt="link">
+    </div>
+    <h2>{{picture.author}}</h2>
+</div>

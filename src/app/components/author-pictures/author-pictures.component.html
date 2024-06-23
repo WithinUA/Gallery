@@ -1,0 +1,19 @@
+    <div class="detaileInfo">
+        <div>
+            <img [src]="getSelectedPicture()?.link" alt="picture">
+        </div>
+        <div>
+            <h1 [ngStyle]="{'text-align':'center'}">{{getSelectedPicture()?.name}}</h1>
+            <p>{{getSelectedPicture()?.author}}</p>
+            <p>{{getSelectedPicture()?.year}}</p>
+            <p>{{getSelectedPicture()?.location}}</p>
+            <p>{{getSelectedPicture()?.size}}</p>
+            <p [ngStyle]="{'margin-top':'10px', 'font-size':'20px'}">Другие картины автора</p>
+            <div >
+                <div *ngFor="let picture of authorPictures"
+                    (click)="setSelectedPicture(picture)">
+                    <img [src]="picture.link" alt="picture">
+                </div>
+            </div>
+        </div>
+    </div>

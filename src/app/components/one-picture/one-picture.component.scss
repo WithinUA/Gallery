@@ -1,0 +1,16 @@
+
+.picCollection{
+    width: 18%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #3D2C11;
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        cursor: pointer;
+    }
+}

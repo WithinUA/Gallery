@@ -1,0 +1,19 @@
+div{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+app-one-picture{
+    width: 90%;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+app-author-pictures{
+    width: 70%;
+    height: 500px;
+}
